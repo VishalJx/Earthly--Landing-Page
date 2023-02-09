@@ -1,0 +1,166 @@
+.about-bg {
+        background-image: url(../images/background3.jpg);
+        object-fit: contain;
+        width: 100%;
+        height: 26rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+}
+#wave{
+        position: absolute;
+        top:57rem;
+}
+.about-content {
+        background-color: rgb(109, 250, 215);
+        height:160vh;
+}
+.about-content h1{
+        text-align: center;
+        width: 100%;
+        bottom: 3rem;
+        position: relative;
+        font-size: 4rem;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        background: url(https://static6.depositphotos.com/1005893/538/i/950/depositphotos_5383870-stock-photo-nature-wallpaper.jpg);
+        background-size: 40%;
+        background-position: 50% 50%;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0.288);
+        animation: zoomout 10s ease 2000ms forwards;
+        filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+}
+.paragraphs {
+        color:rgb(12, 12, 12);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem auto;
+        /* border: 1px solid black; */
+        font-size: 1.4rem;
+        font-family: 'Oxygen', sans-serif;
+}
+.paragraph{
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        width: 70rem;
+        padding: 1rem;
+        box-shadow: 1px 5px 10px black;
+}
+.paragraph:hover {
+        transform: scale(1.02);
+        transition: 0.5s;
+}
+.paragraph img{
+        margin:1rem;
+}
+
+#product-btn{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        background-color: #011761;
+        border: 1px solid brown;
+        border-radius: 0.3rem;
+        padding:1rem 2.5rem;
+        font-size: 1.2rem;
+        font-family: 'Oxygen', sans-serif;
+}
+#product-btn:hover {
+        background-color: #047956;
+        color:white;
+        transition: 0.25s;
+}
+
+#p1, #p3{
+        position: relative;
+        animation-name: content;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+}
+#p2{
+        position: relative;
+        animation-name: p3;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+}
+@keyframes p3 {
+        0% {
+                right: -1000px;
+        }
+
+        100% {
+                right: 0px;
+        }
+}
+
+@keyframes zoomout {
+        from {
+                background-size: 40%;
+        }
+
+        to {
+                background-size: 10%;
+        }
+}
+
+
+/* MEDIA-QUERIES FURTHER*/
+
+
+
+
+
+/* //tablet portrait */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+        html {
+                font-size: 50.5%;
+        }
+        .about-content {
+                height: 85vh;
+        }
+        #wave {
+                top: 120rem;
+        }
+        .about-bg {
+                height: 30rem;
+        }
+        .about-content h1 {
+                bottom: 4rem;
+        }
+}
+
+
+/* //smartphone landscape */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+        html {
+                font-size: 45.5%;
+        }
+        .about-content {
+                height: 70vh;
+        }
+        #wave {
+                top: 117rem;
+        }
+
+}
+
+
+
+/* //smartphone portrait */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+        html {
+                font-size: 30.5%;
+        }
+        .about-content {
+                height: 70vh;
+        }
+
+        #wave {
+                top: 169rem;
+        }
+
+}

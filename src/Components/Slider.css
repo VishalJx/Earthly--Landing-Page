@@ -1,0 +1,28 @@
+.caraousal{
+    display: flex;
+    align-items: center;
+}
+.image{
+    max-width:40rem;
+    object-fit: contain;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+.left-arrow{
+    position: relative;
+    left: 4rem;
+    color: white;
+}
+.right-arrow {
+    position: relative;
+    right:4rem;
+    color:white;
+}
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+}
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
