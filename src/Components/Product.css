@@ -36,6 +36,8 @@
 }
 .mid{
     display: flex;
+    justify-content: space-between;
+    width:25rem;
 }
 .description{
     display: flex;
